@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    background: #0F172A;
+    color: white;
+}
+
+header h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.container{
+    min-width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1E293B, #334155);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 60px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.row{
+    display: flex;
+    gap: 10px;
+}
+
+input{
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+input:focus{
+    border-color: #0F172A;
+}
+
+input::placeholder{
+    color: black;
+    font-size: 16px;
+    text-align: center;
+}
+
+button{
+    padding: 12px 20px;
+    background-color: #0F172A;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #e63939;
+    transform: translateY(-4px);
+}
+
+#list{
+    margin-top: 20px;
+    list-style: none;
+}
+
+#list li{
+    background: #f3f3f3;
+    padding: 12px 40px 12px 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    position: relative;
+}
+
+#list li span{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #e63939;
+    font-weight: bold;
+}
+
+#list li span:hover{
+    color: #b00020;
+}
